@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+
 
     Button pagina1 = (Button)findViewById(R.id.button1);
     Button pagina2 = (Button)findViewById(R.id.button2);
 
-    pagina1.setOnClickListener(new View.OnClickListener() {
+        pagina1.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick (View view){
             Intent pagina1 = new Intent(MainActivity.this, Main2Activity.class);
@@ -34,4 +34,5 @@ public class MainActivity extends AppCompatActivity {
         }
     });
 
+}
 }
